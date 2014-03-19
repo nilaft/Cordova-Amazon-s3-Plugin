@@ -28,7 +28,7 @@
                         }
                          success:^(id responseObject) {
                              CDVPluginResult *pluginResult =  [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:@"Success"];
-                             pluginResult.setKeepCallbackAsBool = false;
+                             [pluginResult setKeepCallbackAsBool:false];
                              [self.commandDelegate sendPluginResult:pluginResult callbackId:_command.callbackId];
 
                          }
@@ -54,12 +54,12 @@
 {
     
     [self.commandDelegate runInBackground:^{
-        _command = command
+        _command = command;
         
-        url = [command.arguments objectAtIndex:0];
-        [self uploadFile:url];
+        NSString *path = [command.arguments objectAtIndex:0];
+        [self uploadFile:path];
         CDVPluginResult *pluginResult =  [CDVPluginResult resultWithStatus:CDVCommandStatus_NO_RESULT];
-        pluginResult.setKeepCallbackAsBool = true;
+        [pluginResult setKeepCallbackAsBool:true];
         [self.commandDelegate sendPluginResult:pluginResult callbackId:_command.callbackId];
         
     }];
