@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <Cordova/CDV.h>
 
+#import "AFAmazonS3Manager.h"
+
 
 @interface AS3Uploader : CDVPlugin{
     CDVInvokedUrlCommand *_command;
