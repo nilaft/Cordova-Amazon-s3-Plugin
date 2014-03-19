@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-    id="com.nilaf.plugin.VideoRecorder"
+    id="com.nilaf.plugin.AS3Uploader"
     version="1.0.0">
 
     <name>AS3Uploader</name>
