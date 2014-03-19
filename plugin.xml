@@ -24,8 +24,46 @@
     </config-file>
 
     <header-file src="src/ios/AS3Uploader.h" />
-
     <source-file src="src/ios/AS3Uploader.m" />
+
+
+    <!-- AFNetworking -->
+    <header-file src="src/ios/AFNetworking/AFHTTPRequestOperation.h" />
+    <source-file src="src/ios/AFNetworking/AFHTTPRequestOperation.m" />
+
+    <header-file src="src/ios/AFNetworking/AFSecurityPolicy.h" />
+    <source-file src="src/ios/AFNetworking/AFSecurityPolicy.m" />
+
+
+    <header-file src="src/ios/AFNetworking/AFURLConnectionOperation.h" />
+    <source-file src="src/ios/AFNetworking/AFURLConnectionOperation.m" />
+
+    <header-file src="src/ios/AFNetworking/AFURLRequestSerialization.h" />
+    <source-file src="src/ios/AFNetworking/AFURLRequestSerialization.m" />
+
+    <header-file src="src/ios/AFNetworking/AFHTTPRequestOperationManager.h" />
+    <source-file src="src/ios/AFNetworking/AFHTTPRequestOperationManager.m" />
+
+
+    <header-file src="src/ios/AFNetworking/AFURLResponseSerialization.h" />
+    <source-file src="src/ios/AFNetworking/AFURLResponseSerialization.m" />
+
+    <header-file src="src/ios/AFNetworking/AFNetworkReachabilityManager.h" />
+    <source-file src="src/ios/AFNetworking/AFNetworkReachabilityManager.m" />
+
+    <header-file src="src/ios/AFNetworking/AFURLSessionManager.h" />
+    <source-file src="src/ios/AFNetworking/AFURLSessionManager.m" />
+
+    <header-file src="src/ios/AFNetworking/AFHTTPSessionManager.h" />
+    <source-file src="src/ios/AFNetworking/AFHTTPSessionManager.m" />
+
+    <header-file src="src/ios/AFNetworking/AFNetworking.h" />
+
+    <!-- AFAmazonS3Client -->
+    <header-file src="src/ios/AFAmazonS3Client/AFAmazonS3Manager.h" />
+    <source-file src="src/ios/AFAmazonS3Client/AFAmazonS3Manager.m" />
+    <header-file src="src/ios/AFAmazonS3Client/AFAmazonS3RequestSerializer.h" />
+    <source-file src="src/ios/AFAmazonS3Client/AFAmazonS3RequestSerializer.m" />
 
   </platform>
 </plugin>
