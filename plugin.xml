@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    id="com.nilaf.plugin.VideoRecorder"
+    version="1.0.0">
+
+    <name>AS3Uploader</name>
+
+  <description>
+    Amazon s3 uploader 
+  </description>
+
+  <engines>
+    <engine name="cordova" version=">=2.7.0" />
+  </engines>
+
+
+  <!-- ios -->
+  <platform name="ios">
+
+    <config-file target="config.xml" parent="/*">
+      <feature name="AS3Uploader">
+        <param name="ios-package" value="AS3Uploader"/>
+      </feature>
+    </config-file>
+
+    <header-file src="src/ios/AS3Uploader.h" />
+
+    <source-file src="src/ios/AS3Uploader.m" />
+
+  </platform>
+</plugin>
