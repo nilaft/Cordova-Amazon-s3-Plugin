@@ -15,6 +15,7 @@
 @interface AS3Uploader : CDVPlugin{
     CDVInvokedUrlCommand *_command;
     NSString *accessId,*secretKey,*bucket;
+    AFAmazonS3Manager *s3Client;
 }
 
 - (void)config:(CDVInvokedUrlCommand*)command;
